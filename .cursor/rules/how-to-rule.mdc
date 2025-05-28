@@ -1,0 +1,74 @@
+---
+description: Example version of the how-to-rule
+globs: 
+alwaysApply: false
+---
+# How to Use Tech AI Assistant Rules in Cursor AI
+
+To use any of the rules below, simply mention the rule name in your Cursor AI chat using the '@' symbol. For example: "@architecture-definition-rule create a definition for..."
+
+## Shared References
+The following reference materials are available to all rules:
+- **Architecture Reference**: Located at `reference/Architecture`
+- **Product Reference**: Located at `reference/Product`
+- **Operations Reference**: Located at `reference/Operations`
+  - Contains operational, platform, and process documentation
+  - Used for platform documentation, operational runbooks, and related rules
+
+## Required Information
+Each rule requires specific minimum information to generate accurate and useful output. The AI will prompt you for this information before proceeding.
+
+### Product Rules
+- **Product Brief Rule**: 
+  - Minimum: Product name and basic description
+  - Additional: Target market, key problems, requirements, timeline
+
+### Architecture Rules
+- **Architecture Definition Rule**: 
+  - Minimum: System name and basic description
+  - Additional: Technical requirements, integration points, architectural patterns
+- **Architecture Pattern Rule**: 
+  - Minimum: Pattern name and context
+  - Additional: Implementation details, examples, constraints
+- **Solution Architecture Overview Rule**: 
+  - Minimum: Solution name and basic description
+  - Additional: Business objectives, technical requirements, integration points
+- **Technology Adoption Rule**: 
+  - Minimum: Technology name and use case
+  - Additional: Current state, requirements, constraints
+- **Architecture Decision Record Rule**: 
+  - Minimum: Decision context and options
+  - Additional: Stakeholders, constraints, implications
+- **Best Practices Rule**: 
+  - Minimum: Practice area and context
+  - Additional: Current state, requirements, constraints
+
+### Operations Rules
+- **Platform Documentation Rule**:
+  - Minimum: Platform name and description, plus at least one of: architecture diagram, terraform code, or detailed platform description
+  - Additional: Author, date, instance details, patch/maintenance, security, monitoring, references
+
+## Usage Examples
+- "@product-brief-rule create a brief for a new feature..."
+  - AI will prompt for: Product name, description, target market, etc.
+- "@architecture-decision-record-rule document the decision to use GraphQL..."
+  - AI will prompt for: Decision context, options, stakeholders, etc.
+- "@architecture-definition-rule validate this architecture document..."
+  - AI will prompt for: System name, description, requirements, etc.
+- "@platform-documentation-rule create platform documentation for ATS using the attached diagram and terraform code."
+  - AI will prompt for: Platform name, description, and required technical details
+
+## Getting Started
+1. Identify what you need to create or validate
+2. Find the appropriate rule from the list above
+3. Start your Cursor AI chat with "@[rule-name]..."
+4. Be prepared to provide the required minimum information
+5. The AI will guide you through providing any additional helpful information
+
+## Best Practices
+1. Always provide the minimum required information
+2. Be specific and detailed in your responses
+3. Review the AI's assumptions and clarifications
+4. Consider reference folder alignment for technical and operational decisions
+5. Ask for clarification if needed
+6. Validate the output against your requirements
